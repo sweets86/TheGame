@@ -1,0 +1,44 @@
+START: Välj Man/Kvinna. Kommer inte spela någon roll, bara en extra grej.
+
+FRÅGA 1: Hur bjuder du ut din dejt?
+        1 - Promenad
+        X - Bio
+        2 - Middag
+
+#SVAR 1: FRÅGA 2: Det kommer nederbörd, vad gör du?
+        1 - Tar fram Paraply
+        X - Springer så fort du kan och tar skydd
+        2 - Vinkar på taxi
+
+--SLUT: SVAR 1: Ni lever lyckliga alla dar och gifter er ännu lyckligare.
+        SVAR X: Ni är dömda att aldrig mer ses igen, det var roligt så länge det vara.
+        SVAR 2: Ni skaffar barn ihop och lever loppan!
+
+#SVAR X: FRÅGA 2: Vilken film ser ni?
+        1 - Titanic
+        X - Saw XXX
+        2 - Partnern väljer
+
+OAVSETT SVAR OVAN: FRÅGA 3: Vad händer under filmen?
+        1 - Närmare kontakt
+        X - Det behövs mer popcorn
+        2 - Brandlarmet går
+
+--SLUT: SVAR 1: Ni skaffar barn ihop och lever loppan!
+        SVAR X: Ni lever lyckliga alla dar och gifter er ännu lyckligare.
+        SVAR 2: Ni är dömda att aldrig mer ses igen, det var roligt så länge det vara.
+
+#SVAR 2: FRÅGA 2: Vart tar du din dejt på middag?
+        1 - Hemma
+        X - Paris
+        2 - Vid sjön
+
+OAVSETT SVAR OVAN: FRÅGA 3: Hur många barn vill du ha?
+        1 - 2 st.
+        X - 5 st.
+        2 - 1 st.
+
+--SLUT: SVAR 1: Ni lever lyckliga alla dar och gifter er ännu lyckligare.
+        SVAR X: Ni är dömda att aldrig mer ses igen, det var roligt så länge det vara.
+        SVAR 2: Ni skaffar barn ihop och lever loppan!
+
