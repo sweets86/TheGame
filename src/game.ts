@@ -1,5 +1,5 @@
-function Hello() {
-    alert("Hey Hej");
+function Intro() {
+    alert("Hey, Welcome");
 }
 
-Hello();
+Intro();
