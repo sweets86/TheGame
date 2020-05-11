@@ -1,6 +1,6 @@
 "use strict";
-function Hello() {
-    alert("Hey Hej");
+function Intro() {
+    alert("Hey, Welcome");
 }
-Hello();
+Intro();
 //# sourceMappingURL=game.js.map
