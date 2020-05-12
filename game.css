@@ -24,8 +24,15 @@ body {
     height: 10px;
 }
 
-.headerContainer {
+#headerContainer {
     display: flex;
     flex-direction: row;
     padding: 10px;
+}
+
+.containerText {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    font-size: large;
 }

@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./game.css">
+    <script defer src="./build/game.js"></script>
     <title>The Game</title>
 </head>
 
 <body>
-    <script src="./build/game.js"></script>
     <h1 id="headerText">Är du kvinna eller man?</h1>
-    <div class="headerContainer">
+    <div id="headerContainer">
         <form>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Man</label>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Kvinna</label>
-            <input id="submitButton" onclick="myFunction()" type="button" value="Submit">
+            <input id="submitButton" onclick="myFunction('hey', 'hello', 'hej')" type="button" value="Submit">
         </form>
     </div>
+
     <div id="mainContainer">
 
     </div>
