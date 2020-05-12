@@ -3,5 +3,36 @@
 }
 
 body {
+    margin: 0;
     background-color: rgb(49, 49, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+#mainContainer {
+    width: 80%;
+    height: 80%;
+    background-color:rgb(106, 106, 165);
+}
+
+#chooseSex {
+    width: 20px;
+    height: 10px;
+}
+
+#headerContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.containerText {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    font-size: large;
 }
