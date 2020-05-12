@@ -17,6 +17,9 @@ body {
     width: 80%;
     height: 80%;
     background-color:rgb(106, 106, 165);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #chooseSex {
@@ -30,9 +33,23 @@ body {
     padding: 10px;
 }
 
-.containerText {
+/* .containerStartText {
     display: flex;
     justify-content: center;
-    padding: 2em;
-    font-size: large;
+} */
+
+.containerQuery {
+    /* display: flex;
+    justify-content: center; */
+    padding-bottom: 3em;
+}
+
+.listStyle {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    object-fit: contain;
+    padding-top: 1em;
 }
