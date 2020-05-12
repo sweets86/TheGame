@@ -2,11 +2,60 @@ function Intro() {
     alert("Vill du spela Dejta?");
 }
 // Intro();
-function myFunction(props) {
-    if (props.push) {
-        props = document.getElementById("headerContainer").innerText = "";
+function myFunction(props, text, mainConText, mainCon, list, img) {
+    props = document.getElementById("headerContainer").innerText = "";
+    (document.body.append(props));
+    text = document.getElementById("headerText").innerText = "";
+    (document.body.append(text));
+    mainConText = document.createElement("h1");
+    mainConText.innerText = "Börja Spela!";
+    mainConText.classList = "containerStartText";
+    document.getElementById("mainContainer").append(mainConText);
+    mainCon = document.createElement("div");
+    mainCon.id = "mainID";
+    mainCon.innerText = "FRÅGA 1: Hur bjuder du ut din dejt?";
+    mainCon.classList = "containerQuery";
+    document.getElementById("mainContainer").append(mainCon);
+    var text1 = {
+        answer: "1 - Promenad"
+    };
+    var text2 = {
+        answer: "2 - Bio"
+    };
+    var text3 = {
+        answer: "3 - Middag"
+    };
+    var questions = [text1, text2, text3];
+    var _loop_1 = function (i) {
+        var allQuestion = questions[i];
+        list = (document.createElement("li"));
+        list.innerText = allQuestion.answer;
+        list.onclick = function () {
+            if (allQuestion.answer[0] == 1) {
+                nextQuery(nextQuery);
+            }
+            else if (allQuestion.answer[0] == 2) {
+                alert("hallo");
+            }
+            else {
+                document.getElementById("mainContainer").innerText = "";
+            }
+        };
+        /* list.classList = "listStyle"; */
+        document.getElementById("mainContainer").append(list);
+    };
+    for (var i = 0; i < questions.length; i++) {
+        _loop_1(i);
     }
-    console.log("hey");
+    img = (document.createElement("img"));
+    img.id = "picID";
+    img.classList = "img";
+    img.src = "./build/Middag1.png";
+    document.getElementById("mainContainer").append(img);
+}
+function nextQuery(nextQ) {
+    nextQ = document.getElementById("mainID");
+    nextQ.innerText = "Det kommer nederbörd, vad gör du?";
 }
 /* const button = (document.getElementById("submitButton") as HTMLInputElement);
 button.addEventListener("click", handleClick);

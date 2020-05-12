@@ -6,12 +6,25 @@ function Intro() {
 
 
 
-function myFunction(props: any, text: any, mainConText: any, mainCon: any, list: any, img: any) {
+let text1 = {
+    answer: "1 - Promenad",
+}
+let text2 = {
+    answer: "2 - Bio",
+}
+let text3 = {
+    answer: "3 - Middag",
+}
 
-    props = (document.getElementById("headerContainer") as HTMLInputElement).innerText ="";
+let questions: any = [text1, text2, text3]
+
+
+function myFunction(props: any, text: any, mainConText: any, mainCon: any, list: any, img: any, mainContainer: any) {
+
+    props = (document.getElementById("headerContainer") as HTMLInputElement).innerText = "";
     (document.body.append(props))
 
-    text = (document.getElementById("headerText") as HTMLInputElement).innerText ="";
+    text = (document.getElementById("headerText") as HTMLInputElement).innerText = "";
     (document.body.append(text))
 
     mainConText = (document.createElement("h1") as HTMLInputElement)
@@ -20,21 +33,15 @@ function myFunction(props: any, text: any, mainConText: any, mainCon: any, list:
     (document.getElementById("mainContainer") as HTMLInputElement).append(mainConText)
 
     mainCon = (document.createElement("div") as HTMLInputElement)
+    mainCon.id = "mainID"
     mainCon.innerText = "FRÅGA 1: Hur bjuder du ut din dejt?";
     mainCon.classList = "containerQuery";
     (document.getElementById("mainContainer") as HTMLInputElement).append(mainCon);
 
-    let text1 = {
-        answer: "1 - Promenad"
-    }
-    let text2 = {
-        answer: "2 - Bio"
-    }
-    let text3 = {
-        answer: "3 - Middag"
-    }
 
-    let questions: any = [text1, text2, text3]
+    mainContainer = document.createElement("div");
+    mainContainer.id = "mainContainerID";
+    (document.getElementById("mainContainer") as HTMLInputElement).append(mainContainer);
 
     for (let i = 0; i < questions.length; i++) {
 
@@ -44,23 +51,56 @@ function myFunction(props: any, text: any, mainConText: any, mainCon: any, list:
         list.innerText = allQuestion.answer;
         list.onclick = function () {
             if (allQuestion.answer[0] == 1) {
-                console.log("hej")
-            } else if (allQuestion.answer[0] == 2)  {
+                (document.getElementById("mainContainerID") as HTMLInputElement).innerText = "";
+                nextQuery(nextQuery, nextQuery, nextQuery)
+            } else if (allQuestion.answer[0] == 2) {
                 alert("hallo")
             } else {
                 (document.getElementById("mainContainer") as HTMLInputElement).innerText = "";
             }
         };
         /* list.classList = "listStyle"; */
-        (document.getElementById("mainContainer") as HTMLInputElement).append(list);
-        
+        (document.getElementById("mainContainerID") as HTMLInputElement).append(list);
+
     }
 
     img = (document.createElement("img"))
+    img.id = "picID"
     img.classList = "img"
     img.src = "./build/Middag1.png";
     (document.getElementById("mainContainer") as HTMLInputElement).append(img);
 
+}
+
+let textOne = {
+    answer1: "1 - Tar fram Paraply"
+}
+let textTwo = {
+    answer1: "2 - Springer så fort du kan och tar skydd"
+}
+let textThree = {
+    answer1: "3 - Vinkar på taxi"
+}
+let questionOne = [textOne, textTwo, textThree]
+
+function nextQuery(nextQ: any, nextL: any, nextImg: any) {
+    nextQ = document.getElementById("mainID")
+    nextQ.innerText = "FRÅGA 2: Det kommer nederbörd, vad gör du?"
+
+    for (let i = 0; i < questionOne.length; ++i) {
+        let Question = questionOne[i]
+
+        nextL = document.createElement("li")
+        nextL.innerText = Question.answer1;
+        (document.getElementById("mainContainerID") as HTMLInputElement).append(nextL);
+    }
+
+
+    nextImg = document.getElementById("picID")
+    nextImg.classList = "img"
+    nextImg.src = "./build/Regn1.png";
+
+    (document.getElementById("mainContainer") as HTMLInputElement).append(nextImg);
 }
 
 
