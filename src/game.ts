@@ -17,7 +17,6 @@ let text3 = {
 
 let questions: any = [text1, text2, text3]
 
-
 function myFunction(props: any, text: any, mainConText: any, mainCon: any, list: any, img: any, mainContainer: any) {
 
     props = (document.getElementById("headerContainer") as HTMLInputElement).innerText = "";
@@ -62,17 +61,17 @@ function myFunction(props: any, text: any, mainConText: any, mainCon: any, list:
                 dinnerQ(dinnerQ, dinnerQ, dinnerQ)
             }
         };
-        /* list.classList = "listStyle"; */
-        (document.getElementById("mainContainerID") as HTMLInputElement).append(list);
 
+        (document.getElementById("mainContainerID") as HTMLInputElement).append(list);
     }
+
 
     img = (document.createElement("img"))
     img.id = "picID"
     img.classList = "img"
     img.src = "./build/Middag1.png";
-    (document.getElementById("mainContainer") as HTMLInputElement).append(img);
 
+    (document.getElementById("mainContainer") as HTMLInputElement).append(img);
 }
 
 let textOne = {
@@ -84,6 +83,7 @@ let textTwo = {
 let textThree = {
     answerOne: "2 - Vinkar på taxi",
 }
+
 let questionOne = [textOne, textTwo, textThree]
 
 function nextQuery(nextQ: any, nextL: any, nextImg: any) {
@@ -105,6 +105,7 @@ function nextQuery(nextQ: any, nextL: any, nextImg: any) {
             }
             location.reload()
         };
+
         (document.getElementById("mainContainerID") as HTMLInputElement).append(nextL);
     }
 
@@ -115,7 +116,6 @@ function nextQuery(nextQ: any, nextL: any, nextImg: any) {
 
     (document.getElementById("mainContainer") as HTMLInputElement).append(nextImg);
 }
-
 
 let tOne = {
     ansOne: "1 - Titanic"
@@ -194,14 +194,13 @@ function movieQ(thirdQ: any, thirdImg: any, thirdL: any) {
         (document.getElementById("mainContainerID") as HTMLInputElement).append(thirdL);
     }
 
+
     thirdImg = document.getElementById("picID")
     thirdImg.classList = "img"
     thirdImg.src = "./build/Popcorn1.png";
 
     (document.getElementById("mainContainer") as HTMLInputElement).append(thirdImg);
 }
-
-
 
 function dinnerQ(fourtQ: any, fourthImg: any, fourthL: any) {
     fourtQ = document.getElementById("mainID")
@@ -218,6 +217,7 @@ function dinnerQ(fourtQ: any, fourthImg: any, fourthL: any) {
 
         (document.getElementById("mainContainerID") as HTMLInputElement).append(fourthL);
     }
+
 
     fourthImg = document.getElementById("picID")
     fourthImg.classList = "img"
@@ -249,88 +249,10 @@ function kidzQ(fifthQ: any, fifthImg: any, fifthL: any) {
         (document.getElementById("mainContainerID") as HTMLInputElement).append(fifthL);
     }
 
+
     fifthImg = document.getElementById("picID")
     fifthImg.classList = "img"
     fifthImg.src = "./build/Baby1.png";
 
     (document.getElementById("mainContainer") as HTMLInputElement).append(fifthImg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const button = (document.getElementById("submitButton") as HTMLInputElement);
-button.addEventListener("click", handleClick);
-
-function handleClick() {
-    console.log("Clicked!")
-} */
-
-
-/* let button = (document.getElementById("submitButton") as HTMLInputElement);
-button.addEventListener("click", () => {
-    (document.getElementById("headerContainer") as HTMLInputElement).innerText =""
-}); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* class MyObject {
-    genderMale: boolean;
-    genderFemale: boolean;
-    button: boolean;
-
-    constructor(genderMale: boolean, genderFemale: boolean, button: boolean) {
-        this.genderMale = genderMale;
-        this.genderFemale = genderFemale;
-        this.button = button;
-    }
-}
-
-let genderMale = (document.getElementById("male") as HTMLInputElement).value;
-let genderFemale = (document.getElementById("female") as HTMLInputElement).value;
-let button = (document.getElementById("submitButton") as HTMLInputElement).value;
-
-// let confirm = new MyObject(gender, button);
-
-function myFunction(myObject: MyObject) {
-
-}
-
-myFunction.onclick = function () {
-
-} */
-

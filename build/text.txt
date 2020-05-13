@@ -1,4 +1,4 @@
-START: Välj Man/Kvinna. Kommer inte spela någon roll, bara en extra grej.
+START: Välj Man/Kvinna. (Kommer inte spela någon roll, bara en extra grej.)
 
 FRÅGA 1: Hur bjuder du ut din dejt?
         1 - Promenad
