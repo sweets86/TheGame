@@ -52,6 +52,6 @@ body {
 .img {
     object-fit: contain;
     padding-top: 1em;
-    max-width: 25%;
-    min-width: 25%;
+    max-height: 60%;
+    min-height: 50%;
 }
